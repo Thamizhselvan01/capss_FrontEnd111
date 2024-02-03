@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://backend-d1y6.onrender.com/register", { name, email, password })
+      .post("https://resetpassword-lakd.onrender.com/register", { name, email, password })
       .then((res) => {
         alert("Created");
         console.log(res);
