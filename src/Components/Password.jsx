@@ -11,7 +11,7 @@ const Password = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://backend-d1y6.onrender.com/forgot-password", { email })
+      .post("https://resetpassword-lakd.onrender.com/forgot-password", { email })
       .then((res) => {
         console.log(res);
         if (res.data === "Success") {
