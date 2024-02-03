@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://backend-d1y6.onrender.com//login", { email, password })
+      .post("https://backend-d1y6.onrender.com/login", { email, password })
       .then((res) => {
         console.log(res.data.Message);
         if (res.data.Message === "Success") {
